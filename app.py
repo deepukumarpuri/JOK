@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "Thanks for using this api"
+    return "Thanks for using this api By @DKBOTZ"
 
 
 if __name__ == '__main__':
