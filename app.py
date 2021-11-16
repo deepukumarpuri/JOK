@@ -1,16 +1,16 @@
 import os
 import json
 import random
+import jokes
 from flask import Flask, redirect, render_template, request, jsonify, json
 
 
 app = Flask(__name__)
-jokes = open('jokes.json', 'r').read()
 
 
 @app.route("/")
 def main():
-    return random.choice(jokes)
+    return random.choice(jokes.jokes)
 
 
 if __name__ == '__main__':
